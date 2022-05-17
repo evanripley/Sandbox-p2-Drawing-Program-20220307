@@ -15,7 +15,10 @@ void setup() {
 }
 //
 void draw() {
-  if (draw==true)line(mouseX, mouseY, pmouseX, pmouseY);
+  //
+  //drawing tools
+  if (draw==true && mouseX>=drawingSurfaceX && mouseX<=drawingSurfaceX+drawingSurfaceWidth && mouseY>=drawingSurfaceY && mouseY<=drawingSurfaceY+drawingSurfaceHeight)line(mouseX, mouseY, pmouseX, pmouseY); //line
+  if () ellipse (mouseX, mouseY); //circle
 }
 //
 void keyPressed() {
